@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <form asp-action="CalculateSalary" method="post">
+        <select name="EmployeeType" id="type">
+            <option value="FullTime">Full-Time</option>
+            <option value="PartTime">Part-Time</option>
+            <option value="Contract">Contract</option>
+            <option value="Freelancer">Freelancer</option>
+        </select>
+
+        <!-- Add fields for full-time -->
+        <div id="fullTimeFields">
+            <input name="AnnualSalary" placeholder="Annual Salary" />
+            <input name="WorkingHoursPerWeek" />
+            <input name="WorkingWeeksPerYear" />
+            <input name="LoggedHours" />
+        </div>
+
+        <!-- Add other conditional blocks similarly -->
+
+        <button type="submit">Calculate</button>
+    </form>
+
+}
